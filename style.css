@@ -8,3 +8,9 @@ body {
     background-color: antiquewhite;
 }
 
+.card {
+    background-color: gray;
+    height: 1000px;
+    width: 100%;
+}
+

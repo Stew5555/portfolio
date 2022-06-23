@@ -5,10 +5,12 @@
     box-sizing: border-box;
 }
 
+/* nav */
+
 .hero {
     height: 100vh;
     width: 100%; 
-    background-image: url(../classwork2/leafs.jpg);
+    background-image: url(../classwork2/pexels-azim-islam-1210276.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -51,3 +53,29 @@ nav ul li a:hover {
     color: rgb(37, 107, 229);
     transition: .5s;
 }
+
+/* content */
+
+.content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+}
+
+h1 {
+    color: white;
+    margin:  20px 0px 20px;
+    font-size: 50px;
+}
+
+h3 {
+    color: rgb(160, 204, 234);
+    font-family: fantasy;
+}
+
+h2 {
+    color: white;
+    letter-spacing: 2px;
+    position: relative;right: -30px;
+}
+

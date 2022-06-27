@@ -12,7 +12,7 @@
     width: 100%; 
     background-size: cover;
     background-position: center;
-    background: linear-gradient(to right, rgb(65, 63, 63), rgb(35, 33, 33));
+    background: linear-gradient(to right, rgb(65, 63, 63), rgb(22, 21, 21));
 }
 
 nav {
@@ -60,7 +60,7 @@ nav ul li a:hover {
 .content{
     position: absolute;
     top: 50%;
-    left:8%;
+    left: 30%;
 }
 
 h1 {
@@ -79,9 +79,13 @@ h2 {
     letter-spacing: 2px;
     position: relative;right: -30px;
 }
+/* about me */
+.main{
+    height: 100vh;
+}
 
 .about {
-    background: linear-gradient(to right, rgb(65, 63, 63), rgb(35, 33, 33));
+    background: linear-gradient(to right, rgb(65, 63, 63), rgb(22, 21, 21));
     display: flex;
 }
 
@@ -90,13 +94,49 @@ img {
     height: 200px;
     display: block;
     margin-top: 50px;
+    margin-left: 40%;
     border-radius: 30%;
     padding: 10px;
 }
 
+.aboutme {
+    display: block;
+    margin-left: 37%;
+    width: 800px;
+    height: 300px;
+    margin-left: 37%;
+    border: 3px solid white;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
+
+}
+
+h4 {
+    font-size: 75px;
+    margin-left: 30%;
+    color: rgb(37, 107, 229);
+}
+
+p {
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+}
+
+
+
+/* Projects */
+
 .skills {
     height: 100vh;
-    background: linear-gradient(to right, rgb(65, 63, 63), rgb(35, 33, 33));
+    background: linear-gradient(to right, rgb(65, 63, 63), rgb(22, 21, 21));
     display: flex;
 }
 
@@ -110,28 +150,53 @@ img {
     margin-right: auto;
     display: flex;
     justify-content: space-around;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
 }
+
 
 .card1 {
     width: 200px;
     height: 300px;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     margin-top: 100px;
     border-radius: 25px;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
 }
 
+
 .card2 {
-    width: 200px;
-    height: 300px;
-    background-color: black;
-    margin-top: 100px;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(44, 44, 44);
+    margin-top: 50px;
     border-radius: 25px;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
 }
 
 .card3 {
     width: 200px;
     height: 300px;
-    background-color: black;
+    background-color: rgb(44, 44, 44);
     margin-top: 100px;
     border-radius: 25px;
+    transform: translateY(0px);
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 6);
+        transform: translateY(0px);
+    }
+    50%{
+        box-shadow: 0px 25px 15px 0px rgba(0, 0, 0, 2);
+        transform: translateY(0px);
+    }
+    100%{
+        box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 6);
+        transform: translateY(0px);
+    }
 }

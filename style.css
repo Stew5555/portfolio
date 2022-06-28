@@ -25,6 +25,7 @@ nav {
     background-color: black;
 }
 
+
 .logo {
     color: white;
     font-size: 35px;
@@ -82,11 +83,14 @@ h2 {
 /* about me */
 .main{
     height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about {
     background: linear-gradient(to right, rgb(65, 63, 63), rgb(22, 21, 21));
     display: flex;
+    flex-wrap: wrap;
 }
 
 img {
@@ -106,16 +110,22 @@ img {
     height: 300px;
     margin-left: 37%;
     border: 3px solid white;
+    background-size: 400%;
+    background-image: radial-gradient(rgb(109, 109, 109), rgb( 97, 97, 97), rgb(69, 69, 69), rgb(56, 56, 56), rgb(32, 32, 32),rgb(32, 32, 32), rgb(56, 56, 56), rgb(69, 69, 69), rgb( 97, 97, 97), rgb(107, 107, 107) );
+    animation: animate 15s infinite;
+    flex: 50%;
 }
 
-@keyframes animate {
+@keyframes animate{
     0%{
-        background-position: 0%;
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
     }
     100%{
-        background-position: 100%;
+        background-position: 50% 0%;
     }
-
 }
 
 h4 {
@@ -143,15 +153,16 @@ p {
 .cards {
     height: 500px;
     width: 1200px;
-    background-color: white;
+    background: radial-gradient(rgb(146, 146, 146),rgb(44, 44, 44));
     border-radius: 25px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     justify-content: space-around;
     transform: translateY(0px);
     animation: float 6s ease-in-out infinite;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -163,8 +174,14 @@ p {
     border-radius: 25px;
     transform: translateY(0px);
     animation: float 6s ease-in-out infinite;
+    display: flex;
 }
 
+@media (max-width: 800px) {
+    .card1, .card2, .card3 {
+        flex: 100%;
+    }
+}
 
 .card2 {
     width: 300px;
@@ -174,6 +191,7 @@ p {
     border-radius: 25px;
     transform: translateY(0px);
     animation: float 6s ease-in-out infinite;
+    display: flex;
 }
 
 .card3 {
@@ -185,6 +203,7 @@ p {
     transform: translateY(0px);
     animation: float 6s ease-in-out infinite;
 }
+
 
 @keyframes float {
     0% {
